@@ -1,0 +1,25 @@
+/* Estilo general del contenedor */
+.features {
+  display: flex;             /* Activa flexbox */
+  gap: 2rem;                 /* Espacio entre los bloques */
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: flex-start;   /* Alinea arriba cada bloque */
+  flex-wrap: wrap;           /* Permite que salten a otra línea en pantallas chicas */
+  margin-top: 2rem;
+}
+
+/* Cada bloque individual */
+.feature {
+  flex: 1 1 300px;           /* Crece, encoge, ancho mínimo de 300px */
+  max-width: 500px;          /* Opcional: límite máximo */
+}
+
+/* Opcional: un poco de estilo */
+.feature h2 {
+  margin-top: 0;
+  color: #333;
+}
+.feature p {
+  line-height: 1.5;
+}
+
